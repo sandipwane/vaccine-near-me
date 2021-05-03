@@ -2,4 +2,3 @@
 ## Check vaccine availability near you
 
 ![Preview](preview.png?raw=true)
-
