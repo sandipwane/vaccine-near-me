@@ -15,6 +15,7 @@
     "moment": "^2.29.1",
     "mongoose": "^5.12.7",
     "mongose": "0.0.2-security",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "node-cron": "^3.0.0"
   }
 }

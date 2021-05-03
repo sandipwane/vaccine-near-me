@@ -10,6 +10,7 @@ var vaccineRouter = require('./routes/vaccine');
 var recipeintRouter = require('./routes/recipeint');
 
 require('./database/init');
+const cron = require('./cron');
 
 var app = express();
 
@@ -43,5 +44,8 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+// init cron
+cron.init();
 
 module.exports = app;
