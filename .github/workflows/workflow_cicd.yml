@@ -21,9 +21,11 @@ jobs:
           cd ./server
           npm install
           npm start &
+          pm2 restart backend
       - name: npm install on frontend
         run: |
           cd ./webapp
           npm install
           npm run build
           npm run start-prod &
+          serve -s build -l 8081 &
