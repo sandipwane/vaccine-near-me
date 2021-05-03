@@ -6,10 +6,6 @@ const _ = require("lodash");
 
 const LIMIT = 10;
 
-// function getTodaysDateIndFormat() {
-//   return moment().format("DD-MM-YYYY");
-// }
-
 function fetchUpcomingDates(days = 5) {
   let dates = [];
   let today = moment();
