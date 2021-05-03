@@ -30,7 +30,7 @@ async function fetchVaccinesByPincodeAndDate(pincode, date) {
   }
 }
 
-/* GET users listing. */
+/* GET */
 router.get("/:pincode/:date?", async (req, res) => {
   try {
     let { pincode, date } = req.params;
