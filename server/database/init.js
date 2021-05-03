@@ -7,5 +7,5 @@ mongoose.connect("mongodb://localhost/vaccine-jugaad", {
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", function () {
-  console.info(`Databse connection established with ${db.name}`)
+  console.info(`Database connection established with ${db.name}`)
 });
